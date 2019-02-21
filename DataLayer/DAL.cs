@@ -55,9 +55,9 @@ namespace DataLayer
                 Product prodItem = DbContext.Products.Where(p => p.id == productItem.id).FirstOrDefault();
                 if (prodItem != null)
                 {
-                    prodItem.productname = productItem.productname;
-                    prodItem.qty = productItem.qty;
-                    prodItem.price = productItem.price;
+                    prodItem.productname = productItem.productname ?? prodItem.productname;
+                    prodItem.qty = productItem.qty ?? prodItem.qty;
+                    prodItem.price = productItem.price ?? prodItem.price;
                     DbContext.SaveChanges();
                 }
                 status = true;

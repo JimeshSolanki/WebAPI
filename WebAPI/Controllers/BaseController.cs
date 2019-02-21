@@ -17,6 +17,11 @@ namespace WebAPI.Controllers
             };
         }
 
+        public static bool IsValidId(string str)
+        {
+            return isStr(str) && Convert.ToInt32(str) > 0;
+        }
+
         public static bool isStr(string str)
         {
             return !String.IsNullOrEmpty(str) ? true : false;

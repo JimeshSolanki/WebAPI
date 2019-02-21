@@ -8,8 +8,8 @@ namespace DataLayer
 
         public string productname { get; set; }
 
-        public Nullable<decimal> qty { get; set; }
+        public Decimal? qty { get; set; }
 
-        public Nullable<decimal> price { get; set; }
+        public Decimal? price { get; set; }
     }
 }
