@@ -10,7 +10,7 @@ namespace WebAPI.Models
 
     public class Response
     {
-        [JsonProperty(PropertyName = "status")
+        [JsonProperty(PropertyName = "status")]
         public int Status { get; set; }
 
         [JsonProperty(PropertyName = "count")]
